@@ -1,0 +1,6 @@
+{
+    "sketch": "motor_test1.ino",
+    "configuration": "cpu=atmega2560",
+    "board": "arduino:avr:mega",
+    "port": "/dev/ttyACM0"
+}
