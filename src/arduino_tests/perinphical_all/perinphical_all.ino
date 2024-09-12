@@ -56,18 +56,12 @@ void loop(){
           bool notify_flag = false; 
           for (int i=0;i<4;i++){ 
               if (abs(fingerPos[i]-prev_fingerPos[i])>10){
-                  prev_fingerPos[i] = fingerPos[i];
                   notify_flag = true;
-                //   Serial.print(i);
-                //   Serial.print(" ");
-                //   Serial.print(fingerPos[i]);
-                //   Serial.print(" ");
               }
-              // Serial.print(F(" "));                
+              prev_fingerPos[i] = fingerPos[i];                           
           }
           if (notify_flag){
-              FingerPosCharac.writeValue(fingerPos,8);
-            //   Serial.println(F("Big enough Connected and sent"));
+              FingerPosCharac.writeValue(fingerPos,8);            
           }
         }
         Serial.print(F("Disconnected from central: "));

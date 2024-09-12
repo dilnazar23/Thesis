@@ -94,8 +94,11 @@ class BLEClient(Node):
         self.get_logger().info(_str)
     
     def send_data_mega(self) -> None:
-        send_msg = f"S,{self.data['finger_1']},{self.data['finger_2']},{self.data['finger_3']},{self.data['finger_4']},\n"
-        self.serial_port.write(send_msg.encode('utf-8'))
+        # some changes here: send data to serial port, but in '<HHHH' format
+        # data start inidcator is 'S'
+        send_msg = 'S'.encode('utf-8')+ struct.pack('<HHHH', self.data['finger_1'], self.data['finger_2'], 
+                               self.data['finger_3'], self.data['finger_4'])
+        self.serial_port.write(send_msg)
 
 def main(args=None):
     rclpy.init(args=args)

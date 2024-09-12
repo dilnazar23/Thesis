@@ -32,6 +32,12 @@ const float OFFSET = 978.74;
 // Finger fingers[NUM_FINGERS];
 Finger finger;
 
+union received_data{
+    byte bytes[8];
+    uint16_t val[4];
+};
+received_data data;
+
 void setup()
 { 
   // MYSERIAL.print is used to allow compatability between both the Mega (Serial.print) 
@@ -44,56 +50,29 @@ void setup()
 //   fingers[1].attach(3, 4, A1);
 //   fingers[2].attach(5, 6, A2);
 //   fingers[3].attach(7, 8, A3);
-finger.attach(24, 25, A0);
+  finger.attach(24, 25, A0);
 
   Serial.println("Pins configured");
 }
 
 void loop()
 {
-    if (Serial.available() > 0) {
-        char start_byte = Serial.read();
-        if (start_byte == 'S'){
-            Serial.println(F("Receive: "));            
-            Serial.read(); // remove the comma
-            String income_data = "";
-            int data[4];
-            int i = 0;
-            while(Serial.available() > 0){
-                char income_byte = Serial.read();
-                if (income_byte == '\n'){
-                    break;
-                }
-                else if(income_byte == ','){
-                    i = i % 4;
-                    data[i] = income_data.toInt();
-                    i++;
-                    Serial.print("here");
-                    Serial.println(income_data);
-                    income_data = "";
-                    continue;
-                }
-                else{
-                    income_data += income_byte;
-                }               
-            }            
-
-            // for (int i = 0; i < 1; i++){
-            //     int pos = data[i]*SLOPE + OFFSET;
-            //     fingers[i].writePos(pos);
-            //     Serial.print(pos);
-            //     delay(10);
-            // }
-            //finger.invertFingerDir();
-            int command = data[0]*SLOPE + OFFSET;
+    while (Serial.available() > 8){
+        if (Serial.read()=='S'){
+            Serial.readBytes(data.bytes, 8);
+            Serial.println();
+            Serial.print("Data received:");
+            // Debugging prints
+            for (int i = 0; i < 4; i++){
+                Serial.print(' ');
+                Serial.print(data.val[i]);
+            }
+            int command = data.val[0]*SLOPE + OFFSET;
             Serial.println("Command: ");
             Serial.print(command);
-            Serial.println("Data: ");
-            Serial.print(data[0]);
-            finger.writePos(command);
-        }
+            // TODO: control the finger
+        };       
+        
     }
-
-
 
 }
