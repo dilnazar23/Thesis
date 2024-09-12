@@ -1,5 +1,0 @@
-{
-    "sketch": "arduino_tests/finger_control/finger_control.ino",
-    "configuration": "cpu=atmega2560",
-    "board": "arduino:avr:mega"
-}

@@ -1,0 +1,2 @@
+[console_scripts]
+ble_client_node = my_ble_package.ble_client_node:main

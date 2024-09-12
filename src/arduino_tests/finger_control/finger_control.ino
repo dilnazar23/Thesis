@@ -71,6 +71,7 @@ void loop()
             Serial.println("Command: ");
             Serial.print(command);
             // TODO: control the finger
+            finger.writePos(command);
         };       
         
     }

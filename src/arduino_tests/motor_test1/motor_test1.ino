@@ -50,30 +50,31 @@ void setup()
 void loop()
 {
   // set the finger to OPEN
+  Serial.print("Writing pos");
+  finger.writePos(50);
   
-  finger.writePos(300);
-  
-  delay(2000);
+  delay(3000);
   int pos = finger.readPos();
   MYSERIAL.println(pos);
-  for(int i= 300; i<900; i++){
+  for(int i= 50; i<900; i++){
     finger.writePos(i);
     delay(10);
+    Serial.print(finger.readPos());
   }
-  // while(1){};
-  MYSERIAL.println("Opening");
-  pos = finger.readPos();
-  MYSERIAL.println(pos);
+  // // while(1){};
+  // MYSERIAL.println("Opening");
+  // pos = finger.readPos();
+  // MYSERIAL.println(pos);
 
-  //finger.open();
-  // give it time to OPEN
-  delay(2000);
-  // set the finger to CLOSE
-  //
-  // finger.close();
-  // MYSERIAL.println("Closing");
-  // // give it time to CLOSE
-  // delay(5500);
-  //while(1){};
+  // //finger.open();
+  // // give it time to OPEN
+  // delay(2000);
+  // // set the finger to CLOSE
+  // //
+  // // finger.close();
+  // // MYSERIAL.println("Closing");
+  // // // give it time to CLOSE
+  // // delay(5500);
+  // //while(1){};
 
 }
