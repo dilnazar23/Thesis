@@ -50,7 +50,7 @@ void setup()
 //   fingers[1].attach(3, 4, A1);
 //   fingers[2].attach(5, 6, A2);
 //   fingers[3].attach(7, 8, A3);
-  finger.attach(24, 25, A0);
+  finger.attach(3, 2, A0);
 
   Serial.println("Pins configured");
 }
