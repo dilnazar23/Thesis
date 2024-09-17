@@ -30,7 +30,7 @@ const float OFFSET = 978.74;
 
 // // initialise Finger class
 // Finger fingers[NUM_FINGERS];
-Finger finger;
+Finger finger[4];
 
 union received_data{
     byte bytes[8];
@@ -50,7 +50,8 @@ void setup()
 //   fingers[1].attach(3, 4, A1);
 //   fingers[2].attach(5, 6, A2);
 //   fingers[3].attach(7, 8, A3);
-  finger.attach(4, 1, 11, A0);
+  finger[0].attach(3, 2, 11, A0);
+  finger[1].attach(4, 1, 3, A1);
 
   Serial.println("Pins configured");
 }
@@ -67,11 +68,16 @@ void loop()
                 Serial.print(' ');
                 Serial.print(data.val[i]);
             }
-            int command = data.val[0]*SLOPE + OFFSET;
+            int commands[4];
             Serial.println("Command: ");
-            Serial.print(command);
-            // TODO: control the finger
-            finger.writePos(command);
+            for (int i = 0; i < 4; i++){
+                commands[i] = data.val[i]*SLOPE + OFFSET;                
+                Serial.print(commands[i]);
+                Serial.print(' ');
+            }
+            Serial.println();
+            finger[0].writePos(commands[0]);
+            finger[1].writePos(commands[1]);
         };       
         
     }
