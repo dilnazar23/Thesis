@@ -46,12 +46,12 @@ void setup()
   Serial.println("Started");
 
   // configure finger pins
-//   fingers[0].attach(1, 2, A0);
-//   fingers[1].attach(3, 4, A1);
-//   fingers[2].attach(5, 6, A2);
-//   fingers[3].attach(7, 8, A3);
-  finger[0].attach(3, 2, 11, A0);
+
+  
+  finger[0].attach(3, 2, 11, A0);                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
   finger[1].attach(4, 1, 3, A1);
+//   finger[2].attach(6, 0, 6, A2);
+//   finger[3].attach(7, 5, 6, A3);
 
   Serial.println("Pins configured");
 }
@@ -78,6 +78,10 @@ void loop()
             Serial.println();
             finger[0].writePos(commands[0]);
             finger[1].writePos(commands[1]);
+            
+            // for (int i = 0; i < 4; i++){
+            //     finger[i].writePos(commands[i]);                
+            // }
         };       
         
     }
