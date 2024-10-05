@@ -21,6 +21,7 @@ setup(
     entry_points={
         'console_scripts': [
             'ble_client_node = my_ble_package.ble_client_node:main',
+            'imu_client_node = my_ble_package.imu_client_node:main',
         ],
     },
 )
