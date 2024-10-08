@@ -4,6 +4,8 @@ from bleak import BleakClient, BleakScanner
 from typing import Dict
 import rclpy
 from rclpy.node import Node
+from geometry_msgs.msg import PoseStamped
+from std_msgs.msg import Header
 
 IMU_CHARAC_ID = "13012F02-F8C3-4F4A-A8F4-15CD926DA146"
 
@@ -18,10 +20,13 @@ class IMUClient(Node):
         self._uuid = uuid
         self._found = False
         self._data = {"time":0.0,"x": 0.0, "y": 0.0, "z": 0.0, "w": 0.0}
+        self.publisher_ = self.create_publisher(PoseStamped, 'pose', 10)
+        
         self._csvout = csvout
         self.newdata = False
         self.printdata = True
         self.get_logger().info('IMUClient initialized')
+
     @property
     def connected(self) -> bool:
         return self._connected
@@ -83,6 +88,16 @@ class IMUClient(Node):
         self._data['z'] = unpacked_data[3]
         self._data['w'] = unpacked_data[4]
         self.newdata = True
+        pose_msg = PoseStamped()
+        pose_msg.header = Header()
+        pose_msg.header.stamp = self.get_clock().now().to_msg()
+        pose_msg.header.frame_id = 'imu_frame'
+        pose_msg.pose.orientation.x = data['x']
+        pose_msg.pose.orientation.y = data['y']
+        pose_msg.pose.orientation.z = data['z']
+        pose_msg.pose.orientation.w = data['w']
+        self.publisher_.publish(pose_msg)
+        self.get_logger().info(f'Publishing: {pose_msg}')
 
     def print_newdata(self) -> None:
         _str = (f"| {self.data['x']}, {self.data['y']}, " 
