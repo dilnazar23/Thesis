@@ -19,7 +19,7 @@ class IMUClient(Node):
         self._running = False
         self._uuid = uuid
         self._found = False
-        self._data = {"time":0.0,"x": 0.0, "y": 0.0, "z": 0.0, "w": 0.0}
+        self._data = {"x": 0.0, "y": 0.0, "z": 0.0, "w": 0.0}
         self.publisher_ = self.create_publisher(PoseStamped, 'pose', 10)
         
         self._csvout = csvout
@@ -81,21 +81,20 @@ class IMUClient(Node):
             self._running = True
 
     def newdata_hndlr(self, sender, data):
-        unpacked_data = struct.unpack('<fffff', data)
-        self._data['time'] = unpacked_data[0]
-        self._data['x'] = unpacked_data[1]
-        self._data['y'] = unpacked_data[2]
-        self._data['z'] = unpacked_data[3]
-        self._data['w'] = unpacked_data[4]
+        unpacked_data = struct.unpack('<ffff', data)        
+        self._data['x'] = unpacked_data[0]
+        self._data['y'] = unpacked_data[1]
+        self._data['z'] = unpacked_data[2]
+        self._data['w'] = unpacked_data[3]
         self.newdata = True
         pose_msg = PoseStamped()
         pose_msg.header = Header()
         pose_msg.header.stamp = self.get_clock().now().to_msg()
         pose_msg.header.frame_id = 'imu_frame'
-        pose_msg.pose.orientation.x = data['x']
-        pose_msg.pose.orientation.y = data['y']
-        pose_msg.pose.orientation.z = data['z']
-        pose_msg.pose.orientation.w = data['w']
+        pose_msg.pose.orientation.x = self._data['x']
+        pose_msg.pose.orientation.y = self._data['y']
+        pose_msg.pose.orientation.z = self._data['z']
+        pose_msg.pose.orientation.w = self._data['w']
         self.publisher_.publish(pose_msg)
         self.get_logger().info(f'Publishing: {pose_msg}')
 
