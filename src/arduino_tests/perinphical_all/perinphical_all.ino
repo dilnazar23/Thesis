@@ -53,12 +53,15 @@ void loop(){
         while (central.connected()){
           WriteToBuffers();
           BufferToPos();
+          //FingerPosCharac.writeValue(fingerPos,8);
           bool notify_flag = false; 
           for (int i=0;i<4;i++){ 
-              if (abs(fingerPos[i]-prev_fingerPos[i])>10){
+              if (abs(fingerPos[i]-prev_fingerPos[i])>5){
                   notify_flag = true;
+                  prev_fingerPos[i] = fingerPos[i];
+                  break;
               }
-              prev_fingerPos[i] = fingerPos[i];                           
+                                         
           }
           if (notify_flag){
               FingerPosCharac.writeValue(fingerPos,8);            
