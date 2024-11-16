@@ -71,13 +71,18 @@ void loop()
             int commands[4];
             Serial.println("Command: ");
             for (int i = 0; i < 4; i++){
-                commands[i] = data.val[i]*SLOPE + OFFSET;                
+                int command = round(data.val[i]*SLOPE + OFFSET);
+                if (command<=975 && command>=40 && abs(command-commands[i])<=200){
+                    commands[i] = command;
+                }                                
                 Serial.print(commands[i]);
                 Serial.print(' ');
             }
             Serial.println();
-            finger[0].writePos(commands[0]);
+            finger[0].writePos(commands[0]);            
             finger[1].writePos(commands[1]);
+            delay(50);
+
             
             // for (int i = 0; i < 4; i++){
             //     finger[i].writePos(commands[i]);                

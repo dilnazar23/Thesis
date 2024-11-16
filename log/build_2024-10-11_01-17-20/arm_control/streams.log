@@ -1,0 +1,38 @@
+[1.035s] Invoking command in '/home/nazar/ros_workspaces/Thesis/src/arm_control': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/nazar/ros_workspaces/Thesis/build/arm_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nazar/ros_workspaces/Thesis/install/arm_control/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/arm_control build --build-base /home/nazar/ros_workspaces/Thesis/build/arm_control/build install --record /home/nazar/ros_workspaces/Thesis/build/arm_control/install.log --single-version-externally-managed install_data
+[1.328s] running egg_info
+[1.328s] creating ../../build/arm_control/arm_control.egg-info
+[1.348s] writing ../../build/arm_control/arm_control.egg-info/PKG-INFO
+[1.348s] writing dependency_links to ../../build/arm_control/arm_control.egg-info/dependency_links.txt
+[1.349s] writing entry points to ../../build/arm_control/arm_control.egg-info/entry_points.txt
+[1.349s] writing requirements to ../../build/arm_control/arm_control.egg-info/requires.txt
+[1.349s] writing top-level names to ../../build/arm_control/arm_control.egg-info/top_level.txt
+[1.349s] writing manifest file '../../build/arm_control/arm_control.egg-info/SOURCES.txt'
+[1.391s] reading manifest file '../../build/arm_control/arm_control.egg-info/SOURCES.txt'
+[1.391s] adding license file 'LICENSE'
+[1.392s] writing manifest file '../../build/arm_control/arm_control.egg-info/SOURCES.txt'
+[1.392s] running build
+[1.392s] running build_py
+[1.392s] creating /home/nazar/ros_workspaces/Thesis/build/arm_control/build
+[1.392s] creating /home/nazar/ros_workspaces/Thesis/build/arm_control/build/lib
+[1.393s] creating /home/nazar/ros_workspaces/Thesis/build/arm_control/build/lib/arm_control
+[1.393s] copying arm_control/__init__.py -> /home/nazar/ros_workspaces/Thesis/build/arm_control/build/lib/arm_control
+[1.393s] copying arm_control/arm_control.py -> /home/nazar/ros_workspaces/Thesis/build/arm_control/build/lib/arm_control
+[1.406s] running install
+[1.412s] running install_lib
+[1.433s] creating /home/nazar/ros_workspaces/Thesis/install/arm_control/lib/python3.12/site-packages/arm_control
+[1.434s] copying /home/nazar/ros_workspaces/Thesis/build/arm_control/build/lib/arm_control/__init__.py -> /home/nazar/ros_workspaces/Thesis/install/arm_control/lib/python3.12/site-packages/arm_control
+[1.434s] copying /home/nazar/ros_workspaces/Thesis/build/arm_control/build/lib/arm_control/arm_control.py -> /home/nazar/ros_workspaces/Thesis/install/arm_control/lib/python3.12/site-packages/arm_control
+[1.434s] byte-compiling /home/nazar/ros_workspaces/Thesis/install/arm_control/lib/python3.12/site-packages/arm_control/__init__.py to __init__.cpython-312.pyc
+[1.434s] byte-compiling /home/nazar/ros_workspaces/Thesis/install/arm_control/lib/python3.12/site-packages/arm_control/arm_control.py to arm_control.cpython-312.pyc
+[1.434s] running install_data
+[1.435s] creating /home/nazar/ros_workspaces/Thesis/install/arm_control/share/ament_index
+[1.435s] creating /home/nazar/ros_workspaces/Thesis/install/arm_control/share/ament_index/resource_index
+[1.435s] creating /home/nazar/ros_workspaces/Thesis/install/arm_control/share/ament_index/resource_index/packages
+[1.435s] copying resource/arm_control -> /home/nazar/ros_workspaces/Thesis/install/arm_control/share/ament_index/resource_index/packages
+[1.435s] copying package.xml -> /home/nazar/ros_workspaces/Thesis/install/arm_control/share/arm_control
+[1.435s] running install_egg_info
+[1.457s] Copying ../../build/arm_control/arm_control.egg-info to /home/nazar/ros_workspaces/Thesis/install/arm_control/lib/python3.12/site-packages/arm_control-0.0.0-py3.12.egg-info
+[1.458s] running install_scripts
+[1.599s] Installing arm_control script to /home/nazar/ros_workspaces/Thesis/install/arm_control/lib/arm_control
+[1.599s] writing list of installed files to '/home/nazar/ros_workspaces/Thesis/build/arm_control/install.log'
+[1.627s] Invoked command in '/home/nazar/ros_workspaces/Thesis/src/arm_control' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/nazar/ros_workspaces/Thesis/build/arm_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nazar/ros_workspaces/Thesis/install/arm_control/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/arm_control build --build-base /home/nazar/ros_workspaces/Thesis/build/arm_control/build install --record /home/nazar/ros_workspaces/Thesis/build/arm_control/install.log --single-version-externally-managed install_data

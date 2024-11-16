@@ -1,6 +1,6 @@
 const int numReadings = 500;
 const int analogPin1 = A0;
-const int analogPin2 = A2;
+const int analogPin2 = A6;
 const int analogPin3 = A4;
 
 float x1_mean[3];
@@ -19,6 +19,8 @@ void setup() {
 
   // Collect and process first set of data
   collectData(x1_mean);
+  Serial.println(x1_mean[0]);
+  Serial.println(x1_mean[1]);
   
   Serial.println("Bend your finger and press 'y' when you are ready to start data collection.");
   while (Serial.read() != 'y') {
@@ -28,6 +30,7 @@ void setup() {
   // Collect and process second set of data
   collectData(x2_mean);
   Serial.println(x2_mean[0]);
+  Serial.println(x2_mean[1]);
 
   // Calculate and print the linear relationship for each pin
   for (int i = 0; i < 3; i++) {

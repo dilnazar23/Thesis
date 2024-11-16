@@ -39,7 +39,7 @@
 
 #define DEFAULT_GAIN_P		2
 #define DEFAULT_GAIN_I		0.008
-#define DEFAULT_GAIN_D		10
+#define DEFAULT_GAIN_D		0.10
 
 
 

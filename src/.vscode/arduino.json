@@ -1,0 +1,5 @@
+{
+    "board": "arduino:samd:nano_33_iot",
+    "sketch": "arduino_tests/calibrate_2/calibrate_2.ino",
+    "port": "/dev/ttyACM0"
+}

@@ -1,0 +1,16 @@
+/home/nazar/ros_workspaces/Thesis/install/arm_transforms/lib/arm_transforms/base2shoulder
+/home/nazar/ros_workspaces/Thesis/install/arm_transforms/share/ament_index/resource_index/package_run_dependencies/arm_transforms
+/home/nazar/ros_workspaces/Thesis/install/arm_transforms/share/ament_index/resource_index/parent_prefix_path/arm_transforms
+/home/nazar/ros_workspaces/Thesis/install/arm_transforms/share/arm_transforms/environment/ament_prefix_path.sh
+/home/nazar/ros_workspaces/Thesis/install/arm_transforms/share/arm_transforms/environment/ament_prefix_path.dsv
+/home/nazar/ros_workspaces/Thesis/install/arm_transforms/share/arm_transforms/environment/path.sh
+/home/nazar/ros_workspaces/Thesis/install/arm_transforms/share/arm_transforms/environment/path.dsv
+/home/nazar/ros_workspaces/Thesis/install/arm_transforms/share/arm_transforms/local_setup.bash
+/home/nazar/ros_workspaces/Thesis/install/arm_transforms/share/arm_transforms/local_setup.sh
+/home/nazar/ros_workspaces/Thesis/install/arm_transforms/share/arm_transforms/local_setup.zsh
+/home/nazar/ros_workspaces/Thesis/install/arm_transforms/share/arm_transforms/local_setup.dsv
+/home/nazar/ros_workspaces/Thesis/install/arm_transforms/share/arm_transforms/package.dsv
+/home/nazar/ros_workspaces/Thesis/install/arm_transforms/share/ament_index/resource_index/packages/arm_transforms
+/home/nazar/ros_workspaces/Thesis/install/arm_transforms/share/arm_transforms/cmake/arm_transformsConfig.cmake
+/home/nazar/ros_workspaces/Thesis/install/arm_transforms/share/arm_transforms/cmake/arm_transformsConfig-version.cmake
+/home/nazar/ros_workspaces/Thesis/install/arm_transforms/share/arm_transforms/package.xml

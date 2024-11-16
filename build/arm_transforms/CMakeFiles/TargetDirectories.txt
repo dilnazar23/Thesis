@@ -1,0 +1,10 @@
+/home/nazar/ros_workspaces/Thesis/build/arm_transforms/CMakeFiles/uninstall.dir
+/home/nazar/ros_workspaces/Thesis/build/arm_transforms/CMakeFiles/arm_transforms_uninstall.dir
+/home/nazar/ros_workspaces/Thesis/build/arm_transforms/CMakeFiles/base2shoulder.dir
+/home/nazar/ros_workspaces/Thesis/build/arm_transforms/CMakeFiles/test.dir
+/home/nazar/ros_workspaces/Thesis/build/arm_transforms/CMakeFiles/edit_cache.dir
+/home/nazar/ros_workspaces/Thesis/build/arm_transforms/CMakeFiles/rebuild_cache.dir
+/home/nazar/ros_workspaces/Thesis/build/arm_transforms/CMakeFiles/list_install_components.dir
+/home/nazar/ros_workspaces/Thesis/build/arm_transforms/CMakeFiles/install.dir
+/home/nazar/ros_workspaces/Thesis/build/arm_transforms/CMakeFiles/install/local.dir
+/home/nazar/ros_workspaces/Thesis/build/arm_transforms/CMakeFiles/install/strip.dir

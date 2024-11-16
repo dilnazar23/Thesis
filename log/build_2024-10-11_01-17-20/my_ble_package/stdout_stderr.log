@@ -1,0 +1,33 @@
+running egg_info
+creating ../../build/my_ble_package/my_ble_package.egg-info
+writing ../../build/my_ble_package/my_ble_package.egg-info/PKG-INFO
+writing dependency_links to ../../build/my_ble_package/my_ble_package.egg-info/dependency_links.txt
+writing entry points to ../../build/my_ble_package/my_ble_package.egg-info/entry_points.txt
+writing requirements to ../../build/my_ble_package/my_ble_package.egg-info/requires.txt
+writing top-level names to ../../build/my_ble_package/my_ble_package.egg-info/top_level.txt
+writing manifest file '../../build/my_ble_package/my_ble_package.egg-info/SOURCES.txt'
+reading manifest file '../../build/my_ble_package/my_ble_package.egg-info/SOURCES.txt'
+writing manifest file '../../build/my_ble_package/my_ble_package.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/nazar/ros_workspaces/Thesis/build/my_ble_package/build
+creating /home/nazar/ros_workspaces/Thesis/build/my_ble_package/build/lib
+creating /home/nazar/ros_workspaces/Thesis/build/my_ble_package/build/lib/my_ble_package
+copying my_ble_package/imu_client_node.py -> /home/nazar/ros_workspaces/Thesis/build/my_ble_package/build/lib/my_ble_package
+copying my_ble_package/ble_client_node.py -> /home/nazar/ros_workspaces/Thesis/build/my_ble_package/build/lib/my_ble_package
+copying my_ble_package/__init__.py -> /home/nazar/ros_workspaces/Thesis/build/my_ble_package/build/lib/my_ble_package
+running install
+running install_lib
+creating /home/nazar/ros_workspaces/Thesis/install/my_ble_package/lib/python3.12/site-packages/my_ble_package
+copying /home/nazar/ros_workspaces/Thesis/build/my_ble_package/build/lib/my_ble_package/imu_client_node.py -> /home/nazar/ros_workspaces/Thesis/install/my_ble_package/lib/python3.12/site-packages/my_ble_package
+copying /home/nazar/ros_workspaces/Thesis/build/my_ble_package/build/lib/my_ble_package/ble_client_node.py -> /home/nazar/ros_workspaces/Thesis/install/my_ble_package/lib/python3.12/site-packages/my_ble_package
+copying /home/nazar/ros_workspaces/Thesis/build/my_ble_package/build/lib/my_ble_package/__init__.py -> /home/nazar/ros_workspaces/Thesis/install/my_ble_package/lib/python3.12/site-packages/my_ble_package
+byte-compiling /home/nazar/ros_workspaces/Thesis/install/my_ble_package/lib/python3.12/site-packages/my_ble_package/imu_client_node.py to imu_client_node.cpython-312.pyc
+byte-compiling /home/nazar/ros_workspaces/Thesis/install/my_ble_package/lib/python3.12/site-packages/my_ble_package/ble_client_node.py to ble_client_node.cpython-312.pyc
+byte-compiling /home/nazar/ros_workspaces/Thesis/install/my_ble_package/lib/python3.12/site-packages/my_ble_package/__init__.py to __init__.cpython-312.pyc
+running install_egg_info
+Copying ../../build/my_ble_package/my_ble_package.egg-info to /home/nazar/ros_workspaces/Thesis/install/my_ble_package/lib/python3.12/site-packages/my_ble_package-0.0.0-py3.12.egg-info
+running install_scripts
+Installing ble_client_node script to /home/nazar/ros_workspaces/Thesis/install/my_ble_package/lib/my_ble_package
+Installing imu_client_node script to /home/nazar/ros_workspaces/Thesis/install/my_ble_package/lib/my_ble_package
+writing list of installed files to '/home/nazar/ros_workspaces/Thesis/build/my_ble_package/install.log'

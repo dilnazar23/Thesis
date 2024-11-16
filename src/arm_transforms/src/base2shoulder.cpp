@@ -43,7 +43,7 @@ class ArmTFBroadcaster : public rclcpp::Node
         shoulder_tf_msg.transform.translation.x = 0.0;
         shoulder_tf_msg.transform.translation.y = 0.0;
         shoulder_tf_msg.transform.translation.z = 0.6;
-
+        // TODO: listen too imu for orientation
         shoulder_tf_msg.transform.rotation.x = msg->pose.orientation.x;
         shoulder_tf_msg.transform.rotation.y = msg->pose.orientation.y;
         shoulder_tf_msg.transform.rotation.z = msg->pose.orientation.z;
@@ -65,7 +65,7 @@ class ArmTFBroadcaster : public rclcpp::Node
         elbow_tf_msg.transform.translation.x = 0.4;
         elbow_tf_msg.transform.translation.y = 0.0;
         elbow_tf_msg.transform.translation.z = 0.0;
-
+        // TODO: listen IMU for orientation(relative to world not to shoulder)
         elbow_tf_msg.transform.rotation.x = msg->pose.orientation.x;
         elbow_tf_msg.transform.rotation.y = msg->pose.orientation.y;
         elbow_tf_msg.transform.rotation.z = msg->pose.orientation.z;

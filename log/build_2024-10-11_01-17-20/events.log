@@ -1,0 +1,334 @@
+[0.000000] (-) TimerEvent: {}
+[0.000419] (arm_control) JobQueued: {'identifier': 'arm_control', 'dependencies': OrderedDict()}
+[0.000449] (arm_transforms) JobQueued: {'identifier': 'arm_transforms', 'dependencies': OrderedDict()}
+[0.000503] (my_ble_package) JobQueued: {'identifier': 'my_ble_package', 'dependencies': OrderedDict()}
+[0.000518] (arm_control) JobStarted: {'identifier': 'arm_control'}
+[0.006767] (arm_transforms) JobStarted: {'identifier': 'arm_transforms'}
+[0.009708] (my_ble_package) JobStarted: {'identifier': 'my_ble_package'}
+[0.099797] (-) TimerEvent: {}
+[0.200098] (-) TimerEvent: {}
+[0.220414] (arm_transforms) JobProgress: {'identifier': 'arm_transforms', 'progress': 'cmake'}
+[0.220834] (arm_transforms) Command: {'cmd': ['/usr/bin/cmake', '/home/nazar/ros_workspaces/Thesis/src/arm_transforms', '-DCMAKE_INSTALL_PREFIX=/home/nazar/ros_workspaces/Thesis/install/arm_transforms'], 'cwd': '/home/nazar/ros_workspaces/Thesis/build/arm_transforms', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'nazar', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/nazar', 'OLDPWD': '/home/nazar/ros_workspaces', 'DESKTOP_SESSION': 'ubuntu', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2814', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'NVM_DIR': '/home/nazar/.nvm', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'LOGNAME': 'nazar', '_': '/usr/bin/colcon', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'nazar', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/nazar-INVALID:@/tmp/.ICE-unix/2606,unix/nazar-INVALID:/tmp/.ICE-unix/2606', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/4c8a09b3_e0f1_4c69_9a1b_287c8d4ba2f4', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.586', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/nazar/ros_workspaces/Thesis/build/arm_transforms', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'NVM_CD_FLAGS': '', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'NVM_RC_VERSION': '', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.300178] (-) TimerEvent: {}
+[0.400405] (-) TimerEvent: {}
+[0.500637] (-) TimerEvent: {}
+[0.600914] (-) TimerEvent: {}
+[0.701112] (-) TimerEvent: {}
+[0.801334] (-) TimerEvent: {}
+[0.901564] (-) TimerEvent: {}
+[1.001810] (-) TimerEvent: {}
+[1.032656] (my_ble_package) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/my_ble_package', 'build', '--build-base', '/home/nazar/ros_workspaces/Thesis/build/my_ble_package/build', 'install', '--record', '/home/nazar/ros_workspaces/Thesis/build/my_ble_package/install.log', '--single-version-externally-managed'], 'cwd': '/home/nazar/ros_workspaces/Thesis/src/my_ble_package', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'nazar', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/nazar', 'OLDPWD': '/home/nazar/ros_workspaces', 'DESKTOP_SESSION': 'ubuntu', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2814', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'NVM_DIR': '/home/nazar/.nvm', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'LOGNAME': 'nazar', '_': '/usr/bin/colcon', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'nazar', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/nazar-INVALID:@/tmp/.ICE-unix/2606,unix/nazar-INVALID:/tmp/.ICE-unix/2606', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/4c8a09b3_e0f1_4c69_9a1b_287c8d4ba2f4', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.586', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/nazar/ros_workspaces/Thesis/build/my_ble_package', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'NVM_CD_FLAGS': '', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/nazar/ros_workspaces/Thesis/build/my_ble_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nazar/ros_workspaces/Thesis/install/my_ble_package/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'NVM_RC_VERSION': '', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[1.034036] (arm_control) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/arm_control', 'build', '--build-base', '/home/nazar/ros_workspaces/Thesis/build/arm_control/build', 'install', '--record', '/home/nazar/ros_workspaces/Thesis/build/arm_control/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/nazar/ros_workspaces/Thesis/src/arm_control', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'nazar', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/nazar', 'OLDPWD': '/home/nazar/ros_workspaces', 'DESKTOP_SESSION': 'ubuntu', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2814', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'NVM_DIR': '/home/nazar/.nvm', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'LOGNAME': 'nazar', '_': '/usr/bin/colcon', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'nazar', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/nazar-INVALID:@/tmp/.ICE-unix/2606,unix/nazar-INVALID:/tmp/.ICE-unix/2606', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/4c8a09b3_e0f1_4c69_9a1b_287c8d4ba2f4', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.586', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/nazar/ros_workspaces/Thesis/build/arm_control', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'NVM_CD_FLAGS': '', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/nazar/ros_workspaces/Thesis/build/arm_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nazar/ros_workspaces/Thesis/install/arm_control/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'NVM_RC_VERSION': '', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[1.101927] (-) TimerEvent: {}
+[1.202162] (-) TimerEvent: {}
+[1.254922] (arm_transforms) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.2.0\n'}
+[1.283192] (my_ble_package) StdoutLine: {'line': b'running egg_info\n'}
+[1.283458] (my_ble_package) StdoutLine: {'line': b'creating ../../build/my_ble_package/my_ble_package.egg-info\n'}
+[1.302234] (-) TimerEvent: {}
+[1.303188] (my_ble_package) StdoutLine: {'line': b'writing ../../build/my_ble_package/my_ble_package.egg-info/PKG-INFO\n'}
+[1.303402] (my_ble_package) StdoutLine: {'line': b'writing dependency_links to ../../build/my_ble_package/my_ble_package.egg-info/dependency_links.txt\n'}
+[1.303575] (my_ble_package) StdoutLine: {'line': b'writing entry points to ../../build/my_ble_package/my_ble_package.egg-info/entry_points.txt\n'}
+[1.303741] (my_ble_package) StdoutLine: {'line': b'writing requirements to ../../build/my_ble_package/my_ble_package.egg-info/requires.txt\n'}
+[1.303877] (my_ble_package) StdoutLine: {'line': b'writing top-level names to ../../build/my_ble_package/my_ble_package.egg-info/top_level.txt\n'}
+[1.304049] (my_ble_package) StdoutLine: {'line': b"writing manifest file '../../build/my_ble_package/my_ble_package.egg-info/SOURCES.txt'\n"}
+[1.328056] (arm_control) StdoutLine: {'line': b'running egg_info\n'}
+[1.328362] (arm_control) StdoutLine: {'line': b'creating ../../build/arm_control/arm_control.egg-info\n'}
+[1.344513] (my_ble_package) StdoutLine: {'line': b"reading manifest file '../../build/my_ble_package/my_ble_package.egg-info/SOURCES.txt'\n"}
+[1.345093] (my_ble_package) StdoutLine: {'line': b"writing manifest file '../../build/my_ble_package/my_ble_package.egg-info/SOURCES.txt'\n"}
+[1.345286] (my_ble_package) StdoutLine: {'line': b'running build\n'}
+[1.345361] (my_ble_package) StdoutLine: {'line': b'running build_py\n'}
+[1.345537] (my_ble_package) StdoutLine: {'line': b'creating /home/nazar/ros_workspaces/Thesis/build/my_ble_package/build\n'}
+[1.345630] (my_ble_package) StdoutLine: {'line': b'creating /home/nazar/ros_workspaces/Thesis/build/my_ble_package/build/lib\n'}
+[1.345701] (my_ble_package) StdoutLine: {'line': b'creating /home/nazar/ros_workspaces/Thesis/build/my_ble_package/build/lib/my_ble_package\n'}
+[1.345767] (my_ble_package) StdoutLine: {'line': b'copying my_ble_package/imu_client_node.py -> /home/nazar/ros_workspaces/Thesis/build/my_ble_package/build/lib/my_ble_package\n'}
+[1.345887] (my_ble_package) StdoutLine: {'line': b'copying my_ble_package/ble_client_node.py -> /home/nazar/ros_workspaces/Thesis/build/my_ble_package/build/lib/my_ble_package\n'}
+[1.345954] (my_ble_package) StdoutLine: {'line': b'copying my_ble_package/__init__.py -> /home/nazar/ros_workspaces/Thesis/build/my_ble_package/build/lib/my_ble_package\n'}
+[1.346084] (my_ble_package) StdoutLine: {'line': b'running install\n'}
+[1.348672] (arm_control) StdoutLine: {'line': b'writing ../../build/arm_control/arm_control.egg-info/PKG-INFO\n'}
+[1.348860] (arm_control) StdoutLine: {'line': b'writing dependency_links to ../../build/arm_control/arm_control.egg-info/dependency_links.txt\n'}
+[1.349033] (arm_control) StdoutLine: {'line': b'writing entry points to ../../build/arm_control/arm_control.egg-info/entry_points.txt\n'}
+[1.349203] (arm_control) StdoutLine: {'line': b'writing requirements to ../../build/arm_control/arm_control.egg-info/requires.txt\n'}
+[1.349302] (arm_control) StdoutLine: {'line': b'writing top-level names to ../../build/arm_control/arm_control.egg-info/top_level.txt\n'}
+[1.349441] (arm_control) StdoutLine: {'line': b"writing manifest file '../../build/arm_control/arm_control.egg-info/SOURCES.txt'\n"}
+[1.353923] (my_ble_package) StdoutLine: {'line': b'running install_lib\n'}
+[1.374433] (my_ble_package) StdoutLine: {'line': b'creating /home/nazar/ros_workspaces/Thesis/install/my_ble_package/lib/python3.12/site-packages/my_ble_package\n'}
+[1.374682] (my_ble_package) StdoutLine: {'line': b'copying /home/nazar/ros_workspaces/Thesis/build/my_ble_package/build/lib/my_ble_package/imu_client_node.py -> /home/nazar/ros_workspaces/Thesis/install/my_ble_package/lib/python3.12/site-packages/my_ble_package\n'}
+[1.374777] (my_ble_package) StdoutLine: {'line': b'copying /home/nazar/ros_workspaces/Thesis/build/my_ble_package/build/lib/my_ble_package/ble_client_node.py -> /home/nazar/ros_workspaces/Thesis/install/my_ble_package/lib/python3.12/site-packages/my_ble_package\n'}
+[1.374844] (my_ble_package) StdoutLine: {'line': b'copying /home/nazar/ros_workspaces/Thesis/build/my_ble_package/build/lib/my_ble_package/__init__.py -> /home/nazar/ros_workspaces/Thesis/install/my_ble_package/lib/python3.12/site-packages/my_ble_package\n'}
+[1.375192] (my_ble_package) StdoutLine: {'line': b'byte-compiling /home/nazar/ros_workspaces/Thesis/install/my_ble_package/lib/python3.12/site-packages/my_ble_package/imu_client_node.py to imu_client_node.cpython-312.pyc\n'}
+[1.376389] (my_ble_package) StdoutLine: {'line': b'byte-compiling /home/nazar/ros_workspaces/Thesis/install/my_ble_package/lib/python3.12/site-packages/my_ble_package/ble_client_node.py to ble_client_node.cpython-312.pyc\n'}
+[1.377325] (my_ble_package) StdoutLine: {'line': b'byte-compiling /home/nazar/ros_workspaces/Thesis/install/my_ble_package/lib/python3.12/site-packages/my_ble_package/__init__.py to __init__.cpython-312.pyc\n'}
+[1.377514] (my_ble_package) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.391693] (arm_control) StdoutLine: {'line': b"reading manifest file '../../build/arm_control/arm_control.egg-info/SOURCES.txt'\n"}
+[1.391903] (arm_control) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[1.392322] (arm_control) StdoutLine: {'line': b"writing manifest file '../../build/arm_control/arm_control.egg-info/SOURCES.txt'\n"}
+[1.392527] (arm_control) StdoutLine: {'line': b'running build\n'}
+[1.392675] (arm_control) StdoutLine: {'line': b'running build_py\n'}
+[1.392826] (arm_control) StdoutLine: {'line': b'creating /home/nazar/ros_workspaces/Thesis/build/arm_control/build\n'}
+[1.392926] (arm_control) StdoutLine: {'line': b'creating /home/nazar/ros_workspaces/Thesis/build/arm_control/build/lib\n'}
+[1.392999] (arm_control) StdoutLine: {'line': b'creating /home/nazar/ros_workspaces/Thesis/build/arm_control/build/lib/arm_control\n'}
+[1.393108] (arm_control) StdoutLine: {'line': b'copying arm_control/__init__.py -> /home/nazar/ros_workspaces/Thesis/build/arm_control/build/lib/arm_control\n'}
+[1.393175] (arm_control) StdoutLine: {'line': b'copying arm_control/arm_control.py -> /home/nazar/ros_workspaces/Thesis/build/arm_control/build/lib/arm_control\n'}
+[1.399041] (my_ble_package) StdoutLine: {'line': b'Copying ../../build/my_ble_package/my_ble_package.egg-info to /home/nazar/ros_workspaces/Thesis/install/my_ble_package/lib/python3.12/site-packages/my_ble_package-0.0.0-py3.12.egg-info\n'}
+[1.399848] (my_ble_package) StdoutLine: {'line': b'running install_scripts\n'}
+[1.402330] (-) TimerEvent: {}
+[1.406615] (arm_control) StdoutLine: {'line': b'running install\n'}
+[1.412660] (arm_control) StdoutLine: {'line': b'running install_lib\n'}
+[1.433742] (arm_control) StdoutLine: {'line': b'creating /home/nazar/ros_workspaces/Thesis/install/arm_control/lib/python3.12/site-packages/arm_control\n'}
+[1.433980] (arm_control) StdoutLine: {'line': b'copying /home/nazar/ros_workspaces/Thesis/build/arm_control/build/lib/arm_control/__init__.py -> /home/nazar/ros_workspaces/Thesis/install/arm_control/lib/python3.12/site-packages/arm_control\n'}
+[1.434063] (arm_control) StdoutLine: {'line': b'copying /home/nazar/ros_workspaces/Thesis/build/arm_control/build/lib/arm_control/arm_control.py -> /home/nazar/ros_workspaces/Thesis/install/arm_control/lib/python3.12/site-packages/arm_control\n'}
+[1.434393] (arm_control) StdoutLine: {'line': b'byte-compiling /home/nazar/ros_workspaces/Thesis/install/arm_control/lib/python3.12/site-packages/arm_control/__init__.py to __init__.cpython-312.pyc\n'}
+[1.434609] (arm_control) StdoutLine: {'line': b'byte-compiling /home/nazar/ros_workspaces/Thesis/install/arm_control/lib/python3.12/site-packages/arm_control/arm_control.py to arm_control.cpython-312.pyc\n'}
+[1.434831] (arm_control) StdoutLine: {'line': b'running install_data\n'}
+[1.434974] (arm_control) StdoutLine: {'line': b'creating /home/nazar/ros_workspaces/Thesis/install/arm_control/share/ament_index\n'}
+[1.435132] (arm_control) StdoutLine: {'line': b'creating /home/nazar/ros_workspaces/Thesis/install/arm_control/share/ament_index/resource_index\n'}
+[1.435230] (arm_control) StdoutLine: {'line': b'creating /home/nazar/ros_workspaces/Thesis/install/arm_control/share/ament_index/resource_index/packages\n'}
+[1.435306] (arm_control) StdoutLine: {'line': b'copying resource/arm_control -> /home/nazar/ros_workspaces/Thesis/install/arm_control/share/ament_index/resource_index/packages\n'}
+[1.435444] (arm_control) StdoutLine: {'line': b'copying package.xml -> /home/nazar/ros_workspaces/Thesis/install/arm_control/share/arm_control\n'}
+[1.435539] (arm_control) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.457661] (arm_control) StdoutLine: {'line': b'Copying ../../build/arm_control/arm_control.egg-info to /home/nazar/ros_workspaces/Thesis/install/arm_control/lib/python3.12/site-packages/arm_control-0.0.0-py3.12.egg-info\n'}
+[1.458478] (arm_control) StdoutLine: {'line': b'running install_scripts\n'}
+[1.502450] (-) TimerEvent: {}
+[1.540087] (my_ble_package) StdoutLine: {'line': b'Installing ble_client_node script to /home/nazar/ros_workspaces/Thesis/install/my_ble_package/lib/my_ble_package\n'}
+[1.540341] (my_ble_package) StdoutLine: {'line': b'Installing imu_client_node script to /home/nazar/ros_workspaces/Thesis/install/my_ble_package/lib/my_ble_package\n'}
+[1.540468] (my_ble_package) StdoutLine: {'line': b"writing list of installed files to '/home/nazar/ros_workspaces/Thesis/build/my_ble_package/install.log'\n"}
+[1.568518] (my_ble_package) CommandEnded: {'returncode': 0}
+[1.576022] (my_ble_package) JobEnded: {'identifier': 'my_ble_package', 'rc': 0}
+[1.599203] (arm_control) StdoutLine: {'line': b'Installing arm_control script to /home/nazar/ros_workspaces/Thesis/install/arm_control/lib/arm_control\n'}
+[1.599497] (arm_control) StdoutLine: {'line': b"writing list of installed files to '/home/nazar/ros_workspaces/Thesis/build/arm_control/install.log'\n"}
+[1.602574] (-) TimerEvent: {}
+[1.626946] (arm_control) CommandEnded: {'returncode': 0}
+[1.632213] (arm_control) JobEnded: {'identifier': 'arm_control', 'rc': 0}
+[1.702671] (-) TimerEvent: {}
+[1.802898] (-) TimerEvent: {}
+[1.897873] (arm_transforms) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.2.0\n'}
+[1.903074] (-) TimerEvent: {}
+[2.003380] (-) TimerEvent: {}
+[2.019151] (arm_transforms) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[2.103500] (-) TimerEvent: {}
+[2.203732] (-) TimerEvent: {}
+[2.223251] (arm_transforms) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[2.232176] (arm_transforms) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[2.232794] (arm_transforms) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[2.250440] (arm_transforms) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[2.268375] (arm_transforms) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[2.303857] (-) TimerEvent: {}
+[2.360471] (arm_transforms) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.369760] (arm_transforms) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.369999] (arm_transforms) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.370479] (arm_transforms) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.404166] (-) TimerEvent: {}
+[2.435255] (arm_transforms) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[2.504290] (-) TimerEvent: {}
+[2.604504] (-) TimerEvent: {}
+[2.665824] (arm_transforms) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[2.704790] (-) TimerEvent: {}
+[2.805047] (-) TimerEvent: {}
+[2.905487] (-) TimerEvent: {}
+[2.917709] (arm_transforms) StdoutLine: {'line': b'-- Found geometry_msgs: 5.3.5 (/opt/ros/jazzy/share/geometry_msgs/cmake)\n'}
+[3.005636] (-) TimerEvent: {}
+[3.105863] (-) TimerEvent: {}
+[3.178304] (arm_transforms) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.3 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[3.205980] (-) TimerEvent: {}
+[3.208274] (arm_transforms) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.3 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[3.250504] (arm_transforms) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.306283] (-) TimerEvent: {}
+[3.355505] (arm_transforms) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.406433] (-) TimerEvent: {}
+[3.472156] (arm_transforms) StdoutLine: {'line': b'-- Found rclcpp: 28.1.3 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[3.506524] (-) TimerEvent: {}
+[3.606780] (-) TimerEvent: {}
+[3.707246] (-) TimerEvent: {}
+[3.743619] (arm_transforms) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[3.782310] (arm_transforms) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[3.807576] (-) TimerEvent: {}
+[3.908015] (-) TimerEvent: {}
+[4.008270] (-) TimerEvent: {}
+[4.108506] (-) TimerEvent: {}
+[4.200515] (arm_transforms) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  \n'}
+[4.208823] (-) TimerEvent: {}
+[4.263678] (arm_transforms) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") \n'}
+[4.287372] (arm_transforms) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[4.308951] (-) TimerEvent: {}
+[4.409196] (-) TimerEvent: {}
+[4.504015] (arm_transforms) StdoutLine: {'line': b'-- Found tf2: 0.36.4 (/opt/ros/jazzy/share/tf2/cmake)\n'}
+[4.509261] (-) TimerEvent: {}
+[4.532175] (arm_transforms) StdoutLine: {'line': b'-- Found tf2_ros: 0.36.4 (/opt/ros/jazzy/share/tf2_ros/cmake)\n'}
+[4.609390] (-) TimerEvent: {}
+[4.709621] (-) TimerEvent: {}
+[4.810062] (-) TimerEvent: {}
+[4.910312] (-) TimerEvent: {}
+[5.010530] (-) TimerEvent: {}
+[5.018649] (arm_transforms) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.36.4 (/opt/ros/jazzy/share/tf2_geometry_msgs/cmake)\n'}
+[5.110637] (-) TimerEvent: {}
+[5.111299] (arm_transforms) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.3.0 (/opt/ros/jazzy/share/eigen3_cmake_module/cmake)\n'}
+[5.114494] (arm_transforms) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[5.114627] (arm_transforms) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[5.120331] (arm_transforms) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[5.210866] (-) TimerEvent: {}
+[5.311325] (-) TimerEvent: {}
+[5.384240] (arm_transforms) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[5.384483] (arm_transforms) StdoutLine: {'line': b'-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/nazar/ros_workspaces/Thesis/src/arm_transforms/include>\n'}
+[5.384628] (arm_transforms) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[5.410051] (arm_transforms) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[5.411506] (-) TimerEvent: {}
+[5.412419] (arm_transforms) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[5.412533] (arm_transforms) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[5.413955] (arm_transforms) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[5.416273] (arm_transforms) StdoutLine: {'line': b'-- Configuring done (5.2s)\n'}
+[5.506349] (arm_transforms) StdoutLine: {'line': b'-- Generating done (0.1s)\n'}
+[5.508168] (arm_transforms) StdoutLine: {'line': b'-- Build files have been written to: /home/nazar/ros_workspaces/Thesis/build/arm_transforms\n'}
+[5.511617] (-) TimerEvent: {}
+[5.518180] (arm_transforms) CommandEnded: {'returncode': 0}
+[5.519351] (arm_transforms) JobProgress: {'identifier': 'arm_transforms', 'progress': 'build'}
+[5.519381] (arm_transforms) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/nazar/ros_workspaces/Thesis/build/arm_transforms', '--', '-j12', '-l12'], 'cwd': '/home/nazar/ros_workspaces/Thesis/build/arm_transforms', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'nazar', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/nazar', 'OLDPWD': '/home/nazar/ros_workspaces', 'DESKTOP_SESSION': 'ubuntu', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2814', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'NVM_DIR': '/home/nazar/.nvm', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'LOGNAME': 'nazar', '_': '/usr/bin/colcon', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'nazar', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/nazar-INVALID:@/tmp/.ICE-unix/2606,unix/nazar-INVALID:/tmp/.ICE-unix/2606', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/4c8a09b3_e0f1_4c69_9a1b_287c8d4ba2f4', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.586', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/nazar/ros_workspaces/Thesis/build/arm_transforms', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'NVM_CD_FLAGS': '', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'NVM_RC_VERSION': '', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[5.566369] (arm_transforms) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/base2shoulder.dir/src/base2shoulder.cpp.o\x1b[0m\n'}
+[5.611750] (-) TimerEvent: {}
+[5.712177] (-) TimerEvent: {}
+[5.812388] (-) TimerEvent: {}
+[5.912816] (-) TimerEvent: {}
+[6.013059] (-) TimerEvent: {}
+[6.113257] (-) TimerEvent: {}
+[6.213491] (-) TimerEvent: {}
+[6.313769] (-) TimerEvent: {}
+[6.414235] (-) TimerEvent: {}
+[6.514535] (-) TimerEvent: {}
+[6.614734] (-) TimerEvent: {}
+[6.714936] (-) TimerEvent: {}
+[6.815190] (-) TimerEvent: {}
+[6.915543] (-) TimerEvent: {}
+[7.015787] (-) TimerEvent: {}
+[7.116025] (-) TimerEvent: {}
+[7.216291] (-) TimerEvent: {}
+[7.316539] (-) TimerEvent: {}
+[7.416741] (-) TimerEvent: {}
+[7.516975] (-) TimerEvent: {}
+[7.617221] (-) TimerEvent: {}
+[7.717458] (-) TimerEvent: {}
+[7.817886] (-) TimerEvent: {}
+[7.918285] (-) TimerEvent: {}
+[8.018525] (-) TimerEvent: {}
+[8.118756] (-) TimerEvent: {}
+[8.219157] (-) TimerEvent: {}
+[8.319569] (-) TimerEvent: {}
+[8.419990] (-) TimerEvent: {}
+[8.520244] (-) TimerEvent: {}
+[8.620511] (-) TimerEvent: {}
+[8.720793] (-) TimerEvent: {}
+[8.821058] (-) TimerEvent: {}
+[8.921330] (-) TimerEvent: {}
+[9.021570] (-) TimerEvent: {}
+[9.121771] (-) TimerEvent: {}
+[9.222065] (-) TimerEvent: {}
+[9.322340] (-) TimerEvent: {}
+[9.422579] (-) TimerEvent: {}
+[9.522836] (-) TimerEvent: {}
+[9.623073] (-) TimerEvent: {}
+[9.723334] (-) TimerEvent: {}
+[9.823575] (-) TimerEvent: {}
+[9.923821] (-) TimerEvent: {}
+[10.024064] (-) TimerEvent: {}
+[10.124265] (-) TimerEvent: {}
+[10.224523] (-) TimerEvent: {}
+[10.324776] (-) TimerEvent: {}
+[10.425031] (-) TimerEvent: {}
+[10.525237] (-) TimerEvent: {}
+[10.625481] (-) TimerEvent: {}
+[10.725719] (-) TimerEvent: {}
+[10.825964] (-) TimerEvent: {}
+[10.926146] (-) TimerEvent: {}
+[11.026395] (-) TimerEvent: {}
+[11.126595] (-) TimerEvent: {}
+[11.226862] (-) TimerEvent: {}
+[11.327132] (-) TimerEvent: {}
+[11.427384] (-) TimerEvent: {}
+[11.527636] (-) TimerEvent: {}
+[11.627893] (-) TimerEvent: {}
+[11.728112] (-) TimerEvent: {}
+[11.828348] (-) TimerEvent: {}
+[11.928589] (-) TimerEvent: {}
+[12.028824] (-) TimerEvent: {}
+[12.129065] (-) TimerEvent: {}
+[12.229270] (-) TimerEvent: {}
+[12.329592] (-) TimerEvent: {}
+[12.429832] (-) TimerEvent: {}
+[12.530114] (-) TimerEvent: {}
+[12.630349] (-) TimerEvent: {}
+[12.730593] (-) TimerEvent: {}
+[12.830835] (-) TimerEvent: {}
+[12.931117] (-) TimerEvent: {}
+[13.031340] (-) TimerEvent: {}
+[13.131738] (-) TimerEvent: {}
+[13.232027] (-) TimerEvent: {}
+[13.332226] (-) TimerEvent: {}
+[13.432466] (-) TimerEvent: {}
+[13.532711] (-) TimerEvent: {}
+[13.632990] (-) TimerEvent: {}
+[13.733199] (-) TimerEvent: {}
+[13.833441] (-) TimerEvent: {}
+[13.933675] (-) TimerEvent: {}
+[14.033924] (-) TimerEvent: {}
+[14.134171] (-) TimerEvent: {}
+[14.234448] (-) TimerEvent: {}
+[14.334687] (-) TimerEvent: {}
+[14.434939] (-) TimerEvent: {}
+[14.535163] (-) TimerEvent: {}
+[14.635396] (-) TimerEvent: {}
+[14.735675] (-) TimerEvent: {}
+[14.835909] (-) TimerEvent: {}
+[14.936096] (-) TimerEvent: {}
+[15.036293] (-) TimerEvent: {}
+[15.136522] (-) TimerEvent: {}
+[15.236719] (-) TimerEvent: {}
+[15.336998] (-) TimerEvent: {}
+[15.437206] (-) TimerEvent: {}
+[15.537449] (-) TimerEvent: {}
+[15.637677] (-) TimerEvent: {}
+[15.737932] (-) TimerEvent: {}
+[15.838170] (-) TimerEvent: {}
+[15.938409] (-) TimerEvent: {}
+[16.038641] (-) TimerEvent: {}
+[16.138838] (-) TimerEvent: {}
+[16.239092] (-) TimerEvent: {}
+[16.339303] (-) TimerEvent: {}
+[16.439543] (-) TimerEvent: {}
+[16.539771] (-) TimerEvent: {}
+[16.640009] (-) TimerEvent: {}
+[16.740229] (-) TimerEvent: {}
+[16.840494] (-) TimerEvent: {}
+[16.868722] (arm_transforms) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable base2shoulder\x1b[0m\n'}
+[16.940787] (-) TimerEvent: {}
+[17.041010] (-) TimerEvent: {}
+[17.141289] (-) TimerEvent: {}
+[17.241752] (-) TimerEvent: {}
+[17.342196] (-) TimerEvent: {}
+[17.442401] (-) TimerEvent: {}
+[17.542639] (-) TimerEvent: {}
+[17.642840] (-) TimerEvent: {}
+[17.743130] (-) TimerEvent: {}
+[17.797808] (arm_transforms) StdoutLine: {'line': b'[100%] Built target base2shoulder\n'}
+[17.808049] (arm_transforms) CommandEnded: {'returncode': 0}
+[17.829170] (arm_transforms) JobProgress: {'identifier': 'arm_transforms', 'progress': 'install'}
+[17.837252] (arm_transforms) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/nazar/ros_workspaces/Thesis/build/arm_transforms'], 'cwd': '/home/nazar/ros_workspaces/Thesis/build/arm_transforms', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'nazar', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/nazar', 'OLDPWD': '/home/nazar/ros_workspaces', 'DESKTOP_SESSION': 'ubuntu', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2814', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'NVM_DIR': '/home/nazar/.nvm', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'LOGNAME': 'nazar', '_': '/usr/bin/colcon', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'nazar', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/nazar-INVALID:@/tmp/.ICE-unix/2606,unix/nazar-INVALID:/tmp/.ICE-unix/2606', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/4c8a09b3_e0f1_4c69_9a1b_287c8d4ba2f4', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.586', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/nazar/ros_workspaces/Thesis/build/arm_transforms', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'NVM_CD_FLAGS': '', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'NVM_RC_VERSION': '', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[17.843200] (-) TimerEvent: {}
+[17.844376] (arm_transforms) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[17.844561] (arm_transforms) StdoutLine: {'line': b'-- Installing: /home/nazar/ros_workspaces/Thesis/install/arm_transforms/lib/arm_transforms/base2shoulder\n'}
+[17.848565] (arm_transforms) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/nazar/ros_workspaces/Thesis/install/arm_transforms/lib/arm_transforms/base2shoulder" to ""\n'}
+[17.848793] (arm_transforms) StdoutLine: {'line': b'-- Installing: /home/nazar/ros_workspaces/Thesis/install/arm_transforms/share/ament_index/resource_index/package_run_dependencies/arm_transforms\n'}
+[17.848918] (arm_transforms) StdoutLine: {'line': b'-- Installing: /home/nazar/ros_workspaces/Thesis/install/arm_transforms/share/ament_index/resource_index/parent_prefix_path/arm_transforms\n'}
+[17.849089] (arm_transforms) StdoutLine: {'line': b'-- Installing: /home/nazar/ros_workspaces/Thesis/install/arm_transforms/share/arm_transforms/environment/ament_prefix_path.sh\n'}
+[17.849269] (arm_transforms) StdoutLine: {'line': b'-- Installing: /home/nazar/ros_workspaces/Thesis/install/arm_transforms/share/arm_transforms/environment/ament_prefix_path.dsv\n'}
+[17.849470] (arm_transforms) StdoutLine: {'line': b'-- Installing: /home/nazar/ros_workspaces/Thesis/install/arm_transforms/share/arm_transforms/environment/path.sh\n'}
+[17.849551] (arm_transforms) StdoutLine: {'line': b'-- Installing: /home/nazar/ros_workspaces/Thesis/install/arm_transforms/share/arm_transforms/environment/path.dsv\n'}
+[17.849636] (arm_transforms) StdoutLine: {'line': b'-- Installing: /home/nazar/ros_workspaces/Thesis/install/arm_transforms/share/arm_transforms/local_setup.bash\n'}
+[17.849719] (arm_transforms) StdoutLine: {'line': b'-- Installing: /home/nazar/ros_workspaces/Thesis/install/arm_transforms/share/arm_transforms/local_setup.sh\n'}
+[17.849800] (arm_transforms) StdoutLine: {'line': b'-- Installing: /home/nazar/ros_workspaces/Thesis/install/arm_transforms/share/arm_transforms/local_setup.zsh\n'}
+[17.849899] (arm_transforms) StdoutLine: {'line': b'-- Installing: /home/nazar/ros_workspaces/Thesis/install/arm_transforms/share/arm_transforms/local_setup.dsv\n'}
+[17.849979] (arm_transforms) StdoutLine: {'line': b'-- Installing: /home/nazar/ros_workspaces/Thesis/install/arm_transforms/share/arm_transforms/package.dsv\n'}
+[17.850172] (arm_transforms) StdoutLine: {'line': b'-- Installing: /home/nazar/ros_workspaces/Thesis/install/arm_transforms/share/ament_index/resource_index/packages/arm_transforms\n'}
+[17.850322] (arm_transforms) StdoutLine: {'line': b'-- Installing: /home/nazar/ros_workspaces/Thesis/install/arm_transforms/share/arm_transforms/cmake/arm_transformsConfig.cmake\n'}
+[17.850425] (arm_transforms) StdoutLine: {'line': b'-- Installing: /home/nazar/ros_workspaces/Thesis/install/arm_transforms/share/arm_transforms/cmake/arm_transformsConfig-version.cmake\n'}
+[17.850509] (arm_transforms) StdoutLine: {'line': b'-- Installing: /home/nazar/ros_workspaces/Thesis/install/arm_transforms/share/arm_transforms/package.xml\n'}
+[17.852367] (arm_transforms) CommandEnded: {'returncode': 0}
+[17.882657] (arm_transforms) JobEnded: {'identifier': 'arm_transforms', 'rc': 0}
+[17.883164] (-) EventReactorShutdown: {}
